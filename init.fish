@@ -2,7 +2,11 @@ function c --description "c [tag]"
     set CONFIG $HOME/.config/gotoshell
 	mkdir -p $CONFIG
     if count $argv > /dev/null
-        cd (cat $CONFIG/$argv[1])
+		set file $CONFIG/$argv[1]
+		if test -e file
+			cd (cat $file)
+		else
+			echo "Tag Not Used."
     else
         cd (cat $CONFIG/default)
     end 
