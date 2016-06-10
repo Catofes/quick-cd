@@ -3,7 +3,7 @@ function c --description "c [tag]"
 	mkdir -p $CONFIG
     if count $argv > /dev/null
 		set file $CONFIG/$argv[1]
-		if test -e file
+		if test -e "$file"
 			cd (cat $file)
 		else
 			echo "Tag Not Used."
