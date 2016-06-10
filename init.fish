@@ -1,5 +1,6 @@
 function c --description "c [tag]"
     set CONFIG $HOME/.config/gotoshell
+	mkidr -p $CONFIG
     if count $argv > /dev/null
         cd (cat $CONFIG/$argv[1])
     else
@@ -9,6 +10,7 @@ end
 
 function cs --description "cs [tag]"
     set CONFIG $HOME/.config/gotoshell
+	mkidr -p $CONFIG
     if count $argv > /dev/null
         pwd > $CONFIG/$argv[1]
     else
