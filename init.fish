@@ -7,6 +7,7 @@ function c --description "c [tag]"
 			cd (cat $file)
 		else
 			echo "Tag Not Used."
+		end
     else
         cd (cat $CONFIG/default)
     end 
