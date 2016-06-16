@@ -12,7 +12,7 @@
 ## Install
 
 ```fish
-$ omf install quick-cd
+$ omf install https://github.com/Catofes/quick-cd.git
 ```
 
 
